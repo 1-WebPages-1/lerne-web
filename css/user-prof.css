@@ -1,0 +1,238 @@
+.pf-con
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "li1 Cl1"
+                         "pu1 Cl1";
+    grid-gap: 20px;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+
+/* User Profile */
+
+.d-Fot
+{
+    grid-area: li1;
+    width: 500px;
+    height: 210px;
+    background-color: #000711;
+    border-radius: 15px;
+    box-shadow: 0px 0px 11px 4px #4c4c4c;
+    display: grid;
+    grid-template-columns: 1.1fr 1.9fr;
+    grid-template-areas: "phot" "nam";
+    grid-template-rows: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.d-Fot:hover
+{
+    box-shadow: 0px 0px 11px 5px #adadad;
+    transition: .3s ease-in-out; 
+}
+
+
+
+.d-Fot img
+{
+    grid-area: phot;
+    width: 150px;
+    height: 150px;
+    border: 3px solid #001C3F; 
+    border-radius: 50%;
+    margin: 5px 0 0 5px;
+    margin: 0 auto;
+}
+
+.d-Fot img:hover
+{
+    border: none;
+    box-shadow: 0 0 3px 4px #0c57b3;
+}
+
+/* Nombre del Usuario */
+
+.U-nam h3
+{
+    grid-area: nam;
+    font-size: 2.8rem;
+}
+
+.U-nam hr
+{
+    width: 97%;
+    margin: 0;
+}
+
+
+/* Subtitles of the box */
+
+.te-t
+{
+    font-size: 1.9rem;
+    margin: 3px 0;
+    text-decoration: underline;
+}
+
+
+.te-s
+{
+    font-size: 1.6rem;
+    margin-left: 5px;
+}
+
+/* publicity */
+
+.addC1
+{
+    grid-area: pu1;
+    width: 500px;
+    height: 210px;
+    border-radius: 15px;
+    margin-top: 20px;
+    box-shadow: 0 0 5px #ffffff;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.addC1 img
+{
+    width: 100%;
+    height: 190px;
+}
+
+
+/* Last Clases */
+
+
+.lt-mat
+{
+    grid-area: Cl1;
+    width: 100%;
+    height: 100%;
+    background-color: #000711;
+    border-radius: 15px;
+    box-shadow: 0px 0px 11px 4px #4c4c4c;
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-areas: "Title"
+                        "Sh"
+                        "Txt";
+}
+
+.lt-mat h3
+{
+    grid-area: Title;
+    margin: 10px 0 0 10px;
+    font-size: 3rem;
+}
+
+.lt-mat h3 hr
+{
+    width: 96%;
+    margin: 0;
+}
+
+.lt-mat p
+{
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+.lvid
+{
+    grid-area:Sh;
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media (max-width: 1200px)
+{
+    .d-Fot
+    {
+        min-width: 300px;
+        max-width: 400px;
+    }
+    
+    .addC1
+    {
+        min-width: 300px;
+        max-width: 400px;
+    }
+
+    .lt-mat
+    {
+        width: 350px;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .d-Fot
+    {
+        width: 200px;
+    }
+    
+    .addC1
+    {
+        width: 200px;
+    }
+
+    .lt-mat
+    {
+        min-width: 200px;
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 500px)
+{
+    .pf-con
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: none;
+        grid-template-areas: "li1"
+                             "pu1"
+                             "Cl1";
+        margin-bottom: 80px;
+    }
+    .d-Fot
+    {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-areas: "phot" 
+                             "nam";
+        width: 100%; 
+        height: 100%;
+        padding: 10px 0;
+    }
+    
+    .addC1
+    {
+        display: none;
+    }
+
+    .lt-mat
+    {
+        width: 100%;
+    }
+
+    .lt-mat p
+    {
+        font-size: 1.8rem;
+    }
+
+    .U-nam
+    {
+        margin: 10px;
+    }
+}

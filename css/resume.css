@@ -1,0 +1,187 @@
+.resm
+{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "New LtC";
+}
+
+.resm h3
+{
+    font-size: 4rem;
+}
+
+.resm p
+{
+    font-size: 2rem;
+}
+
+
+/* Ultima clase */
+
+.WM
+{
+    grid-area: New;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background-color: #000711;
+    box-shadow: 0px 0px 11px 4px #4c4c4c;
+}
+
+
+/* News Section */
+
+.news
+{
+    width: 90%;
+    height: 200px;
+    margin: 20px auto;
+    background-color: #000711;
+    box-shadow: 0px 0px 11px 4px #4c4c4c;
+    border-radius: 15px;
+}
+
+.news h3
+{
+    grid-area: Title;
+    margin: 10px 0 0 10px;
+    text-align: center;
+}
+
+.news p
+{
+    margin: 10px;
+    text-align: center;
+}
+
+/* News with images */
+
+.imNew
+{
+    height: 400px;
+}
+
+/* News Img Container */
+.Nimg
+{
+    text-align: center;
+}
+
+.Nimg img
+{
+    margin-top: 10px;
+    width: 90%;
+    height: 210px;
+}
+
+
+/* Last Class Viewed */
+
+
+.LtCFS
+{
+    grid-area:LtC;
+}
+
+.LtC
+{
+    position: fixed;
+    min-width: 300px;
+    max-width: 500px;
+    height: 450px;
+    background-color: #000711;
+    border-radius: 15px;
+    box-shadow: 0px 0px 11px 4px #4c4c4c;
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-areas: "Title"
+                        "Sh"
+                        "Txt";
+}
+
+.LtC h3
+{
+    margin: 10px 0 0 10px;
+}
+
+.LtC h3 hr
+{
+    margin: 0;
+}
+
+.LtC p
+{
+    margin: 10px;
+}
+
+.lvid
+{
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Mediaquerys */
+
+@media (max-width: 1200px)
+{
+    .resm
+    {
+        margin: 0 auto;
+        margin-top: 40px;
+        width: 90%;
+    }
+    .LtC
+    {
+        width: 450px;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .news h3
+    {
+        font-size: 3rem;
+    }
+
+    .news p
+    {
+        font-size: 1.8rem;
+    }
+    .LtC
+    {
+        width: 320px;
+    }
+    .LtC h3
+    {
+        font-size: 3rem;
+    }
+    .LtC p
+    {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 500px)
+{
+    .resm
+    {
+        grid-template-columns: 1fr;
+        grid-template-areas: "New" 
+                             "LtC";
+                             
+        display: grid;
+        grid-gap: 20px;
+        margin-bottom: 70px;
+    }
+    .LtCFS
+    {
+        display: none;
+    }
+
+}
+

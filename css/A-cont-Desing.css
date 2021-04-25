@@ -1,0 +1,114 @@
+.ContCon-1
+{
+    background-color: transparent;
+    width: 80%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+
+.materies-container
+{
+    margin: 10px;
+    background-color: rgba(0, 110, 255, 0.329); 
+    display: flex;
+    height:50px;
+    width: 500px;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.materies-container:hover
+{
+    transform:scale(.9,.9);
+    box-shadow: 2px 5px;
+    transition: .3s;
+}
+
+.ti-card
+{
+    font-size: 1.9rem;
+    margin-left: 10px;
+}
+
+a.ti-card 
+{
+    color: #fff;
+}
+
+a.ti-card:hover
+{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* MATERY PART, INSIDE LEARNING */
+
+
+/* Matery Title */
+h3.MateryT
+{
+    margin-top: -20px;
+    display: block;
+    width: 100%;
+    font-size: 3rem;
+}
+
+
+.hR
+{
+    width: 100%;
+}
+
+.vid
+{
+    width: 100vw;
+    height: 100vh;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.documentation
+{
+    margin-top:10px;
+}
+
+.documentation p
+{
+    font-size: 1.8rem;
+}
+
+/* A futuro */
+
+.tbcontinue
+{
+    margin: auto;
+    text-align: center;
+}
+
+.tbcontinue h3
+{
+    font-size: 6rem;
+}
+
+.tbcontinue p
+{
+    font-size: 3rem;
+}
+
+/* Mediaquery */
+
+@media (max-width: 500px)
+{
+    .vid
+    {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 20px;
+    }
+}

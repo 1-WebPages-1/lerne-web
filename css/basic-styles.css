@@ -1,0 +1,219 @@
+/*Changin Styles of the Search Engine*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    /*Changin Default Colors & adding a default font-size*/
+    background-color: #000000 !important;
+    color: #ffffff !important;
+}
+
+p
+{
+    font-size: 1.5rem;
+}
+
+a
+{
+    text-decoration: none;
+    color:aqua;
+    font-size: 1.5rem;
+}
+
+li
+{
+    list-style: none;
+}
+
+
+/* Menu Sección */
+
+.NCM
+{
+    width: 100%;
+    height: 55px;
+    margin-top: 20px;
+    display: fixed;
+}
+
+.nav-Con
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+hr
+{
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* Menu */
+
+.menu-btn
+{
+    margin-left: 10px;
+    z-index: 3;
+    cursor: pointer;
+    padding: 0 3px;
+}
+/* 
+.menu-btn:hover
+{
+    background-color: red;
+}
+ */
+/* Search Button */
+
+.Sea-Con
+{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+
+/* Menu links */
+.Rmen
+{
+    position: absolute;
+    background-color: #b3b3b3cc;
+    top: 0;
+    left: 0;
+    padding: 0 200px;
+    height: 100vh;
+    z-index: 2;
+    display: none;
+}
+
+.Rmen ul
+{
+    position: absolute;
+    top:100px;
+    left: 30px;
+}
+
+.Rmen ul li
+{
+    margin:10px 0;
+}
+
+.Rmen ul li a
+{
+    font-size: 1.8rem;
+}
+
+.show
+{
+    display: block;
+}
+
+
+/* Buscador */
+
+.seaN
+{
+    position: relative;
+    top: -2px;
+    right: 60px;
+    z-index: 2;
+    display: none;
+}
+
+
+.seaN input
+{
+    padding: 5px 50px;
+    background-color:#000000;
+    color: white;
+    outline: none;
+    border: 1px solid #ffffff;
+    border-radius:12px;
+}
+
+.seaY
+{
+    display: block;
+}
+
+/* Underline Bar */
+
+.UnBa
+{
+    position:fixed;
+    bottom: 0;
+    display: fixed;
+    width: 100%;
+    background-color: transparent;
+    margin-top: 20px;
+}
+
+.Ulinks
+{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 50%;
+    /* background-color: rgba(0, 83, 190, 0.096); */
+    background-color: rgba(0, 38, 87, 0.726);
+    padding: 15px 0;
+    margin: 0 auto;
+    margin-bottom: 0;
+    border-radius: 12px 12px 0 0;
+}
+
+.UnBa a
+{
+    margin: 0 70px;
+    display: flex;
+}
+
+
+
+@media (max-width: 1200px)
+{
+    .UnBa a
+    {
+        margin: 0 50px;
+        display: flex;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .UnBa a
+    {
+        margin: 0 30px;
+        display: flex;
+    }
+}
+
+@media (max-width: 500px)
+{
+    .UnBa a
+    {
+        margin: 0 20px;
+        display: flex;
+    }
+    .Ulinks
+    {
+        width: 100%;
+        border-radius:0;
+    }
+
+    .Rmen
+    {
+        padding: 0 150px;
+    }
+}
