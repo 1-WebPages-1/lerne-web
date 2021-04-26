@@ -111,4 +111,9 @@ h3.MateryT
         height: 100%;
         margin-bottom: 20px;
     }
+
+    .materies-container
+    {
+        height: 80px;
+    }
 }
