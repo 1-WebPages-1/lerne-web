@@ -1,0 +1,119 @@
+/* Index */
+
+.I-title
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "Tex Cami"
+                         "Su  Su";
+    margin: 0 auto;
+}
+
+.textB
+{
+    grid-area: Tex;
+    margin: auto auto;
+}
+
+.textB h3
+{
+    font-size: 4rem;
+}
+
+.textB p
+{
+    font-size: 2rem;
+}
+
+.PhotB
+{
+    grid-area: Cami;
+    margin: 0 auto;
+}
+
+
+
+/* Sign Up Container */
+
+.DpBk
+{
+    display: block !important;
+}
+ 
+.SignUp 
+{
+    grid-area: Su;
+    border:rgb(221, 102, 4) 1px solid;
+    border-radius: 15px;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.SignUp h3
+{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.SignUp p
+{
+    font-size: 1.7rem;
+}
+
+.SUtxt
+{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.So
+{
+    margin: 10px 0;
+    text-align: center;
+}
+
+.So p
+{
+    margin: 5px 0;
+    text-align: left;
+}
+
+.So input
+{
+    padding: 10px 50px 10px 10px;
+    outline: none;
+    border: #fff;
+    border-radius: 12px;
+    vertical-align: middle;
+}
+
+.SU-b
+{
+    margin: 30px;
+    text-align: center;
+}
+
+.SU-a 
+{
+    padding: 12px;
+    border-radius: 12px;
+    color: #fff;
+    margin: 0 auto;
+    background-color:rgb(221, 102, 4);
+}
+
+
+/* Change Select default styles */
+
+.PoTion
+{
+    text-align: left !important;
+}
+
+select
+{
+    outline: none;
+    border: white solid;
+}
+
