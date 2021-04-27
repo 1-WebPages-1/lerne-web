@@ -46,7 +46,7 @@
     border:rgb(221, 102, 4) 1px solid;
     border-radius: 15px;
     width: 300px;
-    height: 400px;
+    height: 510px;
     margin: 0 auto;
 }
 
@@ -81,7 +81,7 @@
 
 .So input
 {
-    padding: 10px 50px 10px 10px;
+    padding: 10px 60px 10px 10px;
     outline: none;
     border: #fff;
     border-radius: 12px;
@@ -116,4 +116,60 @@ select
     outline: none;
     border: white solid;
 }
+
+/* Already have an Account */
+.HaAcc
+{
+    margin-top: -5px;
+    text-align: center;
+}
+
+/* Acept politics */
+
+.acceptP
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.acceptP p
+{
+    margin-left: 3px;
+}
+
+
+/* Display None */
+
+.SignIn
+{
+    height: 300px;
+    display: none;
+}
+
+.SNA
+{
+    display: block !important;
+}
+
+
+.SNA2
+{
+    display: none !important;
+}
+
+/* Desactivar y Activar */
+
+.SingUpN
+{
+    display: none;
+}
+
+
+.SignUpP
+{
+    display: block !important;
+}
+
+
 
