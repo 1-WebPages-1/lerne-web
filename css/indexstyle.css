@@ -33,9 +33,19 @@
 
 /* Politicas */
 
+.Politics
+{
+    display: block;
+}
+
 .Politics h1
 {
     font-size: 3rem;
+}
+
+.Politics h2
+{
+    font-size: 2.7rem;
 }
 
 
@@ -43,6 +53,13 @@
 {
     font-size: 2.3rem;
     margin-top: 20px;
+}
+
+.Politics li
+{
+    font-size: 2rem;
+    list-style: decimal;
+    margin-left: 20px;
 }
 
 
