@@ -1,0 +1,70 @@
+/* Index */
+
+.I-title
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "Tex Cami"
+                         "Su  Su";
+    margin: 0 auto;
+}
+
+.textB
+{
+    grid-area: Tex;
+    margin: auto auto;
+}
+
+.textB h3
+{
+    font-size: 4rem;
+}
+
+.textB p
+{
+    font-size: 2rem;
+}
+
+.PhotB
+{
+    grid-area: Cami;
+    margin: 0 auto;
+}
+
+/* Politicas */
+
+.Politics h1
+{
+    font-size: 3rem;
+}
+
+
+.Politics h4
+{
+    font-size: 2.3rem;
+    margin-top: 20px;
+}
+
+
+.Politics p, .Politics a
+{
+    font-size: 1.9rem;
+}
+
+
+.Politics table
+{
+    font-size: 1.8rem;
+    border: 1px solid white;
+}
+
+.Politics table tr td
+{
+    border: 1px solid white;
+}
+
+
+
+
+
+

@@ -9,13 +9,19 @@ function SaveData() {
     NameUp.addEventListener('keydown', NameUser);
 }
 
-/* 
-<html><head></head><body>
-        <div class="NCon">
-            <h3>Dejanos Saber tu nombre</h3>
-            <input type="text" name="Name" id="UsuarioName"> 
-        </div>
-        <a id="conf" href="#">Subir</a>
-    
-</body></html>
- */
+/* Activar ya tengo cuenta */
+
+document.querySelector('.HaAcc').addEventListener('click', () => 
+{
+    document.querySelector('.SignUp').classList.toggle('SingUpN')
+    document.querySelector('.SignIn').classList.toggle('SNA')
+});
+
+
+document.querySelector('.Noaccount').addEventListener('click', () =>
+{
+  document.querySelector('.SignUp').classList.toggle('SignUpP')
+  document.querySelector('.SignIn').classList.toggle('SNA2')
+});
+
+
